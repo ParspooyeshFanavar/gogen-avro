@@ -1,7 +1,7 @@
 package types
 
 import (
-	"github.com/ParspooyeshFanavar/gogen-avro/generator"
+	"github.com/ParspooyeshFanavar/gogen-avro/v5/generator"
 )
 
 // Common methods for all primitive types

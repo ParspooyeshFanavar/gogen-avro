@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/ParspooyeshFanavar/gogen-avro/container"
-	"github.com/ParspooyeshFanavar/gogen-avro/example/avro"
+	"github.com/ParspooyeshFanavar/gogen-avro/v5/container"
+	"github.com/ParspooyeshFanavar/gogen-avro/v5/example/avro"
 )
 
 // This example shows serializing records in a object container file

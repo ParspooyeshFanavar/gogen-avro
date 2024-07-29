@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/ParspooyeshFanavar/gogen-avro/example/avro"
+	"github.com/ParspooyeshFanavar/gogen-avro/v5/example/avro"
 )
 
 // This example shows serializing and deserializing records as byte buffers

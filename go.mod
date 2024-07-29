@@ -1,4 +1,4 @@
-module github.com/ParspooyeshFanavar/gogen-avro
+module github.com/ParspooyeshFanavar/gogen-avro/v5
 
 go 1.22.0
 
