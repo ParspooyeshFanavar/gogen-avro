@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/actgardner/gogen-avro/generator"
+	"github.com/ParspooyeshFanavar/gogen-avro/generator"
 )
 
 const recordStructDefTemplate = `
@@ -215,7 +215,7 @@ func (r *RecordDefinition) AddStruct(p *generator.Package, containers bool) erro
 		}
 
 		if containers {
-			p.AddImport(r.filename(), "github.com/actgardner/gogen-avro/container")
+			p.AddImport(r.filename(), "github.com/ParspooyeshFanavar/gogen-avro/container")
 			p.AddFunction(r.filename(), "", r.recordWriterMethod(), r.recordWriterMethodDef())
 		}
 

@@ -1,9 +1,9 @@
 gogen-avro
 ===
 
-[![Build Status](https://travis-ci.org/actgardner/gogen-avro.svg?branch=master)](https://travis-ci.org/actgardner/gogen-avro)
-[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/actgardner/gogen-avro/master/LICENSE)
-[![Version 5.2.0](https://img.shields.io/badge/version-5.2.0-lightgrey.svg)](https://gopkg.in/actgardner/gogen-avro.v5)
+[![Build Status](https://travis-ci.org/ParspooyeshFanavar/gogen-avro.svg?branch=master)](https://travis-ci.org/ParspooyeshFanavar/gogen-avro)
+[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/ParspooyeshFanavar/gogen-avro/master/LICENSE)
+[![Version 5.2.0](https://img.shields.io/badge/version-5.2.0-lightgrey.svg)](https://gopkg.in/ParspooyeshFanavar/gogen-avro.v5)
 
 Generate Go structures and serializer / deserializer methods from Avro schemas. Generated serializers/deserializers are 2-8x faster than goavro, and you get compile-time safety for getting and setting fields.
 
@@ -12,20 +12,20 @@ Generate Go structures and serializer / deserializer methods from Avro schemas. 
 gogen-avro is a tool which you install on your system (usually on your GOPATH), and run as part of your build process. To install gogen-avro to `$GOPATH/bin/`, first download the repository:
 
 ```
-go get -d github.com/actgardner/gogen-avro
+go get -d github.com/ParspooyeshFanavar/gogen-avro
 ```
 
 Then run:
 
 ```
-go install github.com/actgardner/gogen-avro/gogen-avro
+go install github.com/ParspooyeshFanavar/gogen-avro/gogen-avro
 ```
 
 Or download and install a fixed release from gopkg.in:
 
 ```
-go get -d gopkg.in/actgardner/gogen-avro.v5
-go install gopkg.in/actgardner/gogen-avro.v5/gogen-avro
+go get -d gopkg.in/ParspooyeshFanavar/gogen-avro.v5
+go install gopkg.in/ParspooyeshFanavar/gogen-avro.v5/gogen-avro
 ```
 
 ### Usage
@@ -36,7 +36,7 @@ To generate Go source files from one or more Avro schema files, run:
 gogen-avro [--package=<package name>] [--containers] <output directory> <avro schema files>
 ```
 
-You can also use a `go:generate` directive in a source file ([example](https://github.com/actgardner/gogen-avro/blob/master/test/primitive/schema_test.go)):
+You can also use a `go:generate` directive in a source file ([example](https://github.com/ParspooyeshFanavar/gogen-avro/blob/master/test/primitive/schema_test.go)):
 
 ```
 //go:generate $GOPATH/bin/gogen-avro . primitives.avsc
@@ -66,7 +66,7 @@ An example of how to write a container file can be found in `example/container/e
 
 **Experimental:** gogen-avro now supports unpacking Object Container Files. There's a `container.Reader` which will unpack the OCF framing and feed the records into a generated struct deserializer. This should only be used when you're 100% sure the reader and writer schemas are identical - you may see panics, corrupt or incomplete data when reading with a different schema than the writer.
 
-[Godocs for the container package](https://godoc.org/github.com/actgardner/gogen-avro/container)
+[Godocs for the container package](https://godoc.org/github.com/ParspooyeshFanavar/gogen-avro/container)
 
 ### Example
 
@@ -74,11 +74,11 @@ The `example` directory contains simple example projects with an Avro schema. On
 
 ```
 # Build the Go source files from the Avro schema using the generate directive
-go generate github.com/actgardner/gogen-avro/example
+go generate github.com/ParspooyeshFanavar/gogen-avro/example
 
 # Install the example projects on the gopath
-go install github.com/actgardner/gogen-avro/example/record
-go install github.com/actgardner/gogen-avro/example/container
+go install github.com/ParspooyeshFanavar/gogen-avro/example/record
+go install github.com/ParspooyeshFanavar/gogen-avro/example/container
 ```
 
 ### Naming

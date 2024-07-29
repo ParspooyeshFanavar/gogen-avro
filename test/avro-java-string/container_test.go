@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/actgardner/gogen-avro/container"
+	"github.com/ParspooyeshFanavar/gogen-avro/container"
 	"github.com/linkedin/goavro"
 )
 

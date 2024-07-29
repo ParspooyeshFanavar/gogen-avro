@@ -1,4 +1,4 @@
-module github.com/actgardner/gogen-avro
+module github.com/ParspooyeshFanavar/gogen-avro
 
 go 1.22.0
 

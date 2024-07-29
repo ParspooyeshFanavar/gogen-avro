@@ -2,9 +2,10 @@ package main
 
 import (
 	"fmt"
-	"github.com/actgardner/gogen-avro/container"
-	"github.com/actgardner/gogen-avro/example/avro"
 	"os"
+
+	"github.com/ParspooyeshFanavar/gogen-avro/container"
+	"github.com/ParspooyeshFanavar/gogen-avro/example/avro"
 )
 
 // This example shows serializing records in a object container file

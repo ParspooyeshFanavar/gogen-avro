@@ -3,7 +3,7 @@ package types
 import (
 	"fmt"
 
-	"github.com/actgardner/gogen-avro/generator"
+	"github.com/ParspooyeshFanavar/gogen-avro/generator"
 )
 
 const mapSerializerTemplate = `
