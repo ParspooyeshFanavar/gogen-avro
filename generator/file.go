@@ -47,7 +47,7 @@ func (f *File) WriteFile(pkgName, targetFile string) error {
 	if err != nil {
 		return fmt.Errorf("Error formatting file %v - %v\n\nContents: %v", f.name, err, src)
 	}
-	err = ioutil.WriteFile(targetFile, fileContent, 0640)
+	err = ioutil.WriteFile(targetFile, fileContent, 0o640)
 	if err != nil {
 		return fmt.Errorf("Error writing file %v - %v", f.name, err)
 	}
@@ -56,7 +56,7 @@ func (f *File) WriteFile(pkgName, targetFile string) error {
 
 func (f *File) Imports() []string {
 	imports := make([]string, 0)
-	for i, _ := range f.imports {
+	for i := range f.imports {
 		imports = append(imports, i)
 	}
 	sort.Strings(imports)
@@ -65,7 +65,7 @@ func (f *File) Imports() []string {
 
 func (f *File) Structs() []string {
 	structs := make([]string, 0)
-	for s, _ := range f.structs {
+	for s := range f.structs {
 		structs = append(structs, s)
 	}
 	sort.Strings(structs)
@@ -74,7 +74,7 @@ func (f *File) Structs() []string {
 
 func (f *File) Functions() []FunctionName {
 	funcs := make([]FunctionName, 0)
-	for f, _ := range f.functions {
+	for f := range f.functions {
 		funcs = append(funcs, f)
 	}
 	sort.Sort(FunctionNameList(funcs))
@@ -94,7 +94,7 @@ func (f *File) importString() string {
 		return ""
 	}
 	imports := "import (\n"
-	for i, _ := range f.imports {
+	for i := range f.imports {
 		imports += fmt.Sprintf("%q\n", i)
 	}
 	imports += ")"

@@ -42,6 +42,7 @@ func encodeFloat(w io.Writer, byteCount int, bits uint64) error {
 	return nil
 }
 `
+
 const readFloatMethod = `
 func readFloat(r io.Reader) (float32, error) {
 	buf := make([]byte, 4)

@@ -119,7 +119,7 @@ func (r *RecordDefinition) structFields() string {
 
 func (r *RecordDefinition) fieldSerializers() string {
 	if r.fields == nil || len(r.fields) == 0 {
-		//in case the record has no fields just return empty fieldSerializers
+		// in case the record has no fields just return empty fieldSerializers
 		return ""
 	}
 	serializerMethods := "var err error\n"
@@ -131,7 +131,7 @@ func (r *RecordDefinition) fieldSerializers() string {
 
 func (r *RecordDefinition) fieldDeserializers() string {
 	if r.fields == nil || len(r.fields) == 0 {
-		//in case the record has no fields just assign err to nil to work with template defining var err error
+		// in case the record has no fields just assign err to nil to work with template defining var err error
 		return ""
 	}
 	deserializerMethods := "var err error\n"

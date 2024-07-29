@@ -51,7 +51,7 @@ func NewUnionField(name string, itemType []AvroType, definition []interface{}) *
 }
 
 func (s *unionField) compositeFieldName() string {
-	var unionFields = "Union"
+	unionFields := "Union"
 	for _, i := range s.itemType {
 		unionFields += i.Name()
 	}

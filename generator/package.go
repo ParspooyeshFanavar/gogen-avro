@@ -27,7 +27,7 @@ func (p *Package) WriteFiles(targetDir string) error {
 
 func (p *Package) Files() []string {
 	files := make([]string, 0)
-	for file, _ := range p.files {
+	for file := range p.files {
 		files = append(files, file)
 	}
 	sort.Strings(files)

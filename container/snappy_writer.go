@@ -3,9 +3,10 @@ package container
 import (
 	"bytes"
 	"encoding/binary"
-	"github.com/golang/snappy"
 	"hash/crc32"
 	"io"
+
+	"github.com/golang/snappy"
 )
 
 // A Writer that buffers until it's closed, then

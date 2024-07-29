@@ -22,8 +22,7 @@ type Namer interface {
 
 // DefaultNamer implements the Namer interface with the
 // backwards-compatible public name generator function.
-type DefaultNamer struct {
-}
+type DefaultNamer struct{}
 
 // NamespaceNamer is like DefaultNamer but taking into account
 // special tokens so namespaced names can be generated safely.
@@ -32,9 +31,7 @@ type NamespaceNamer struct {
 	re         *regexp.Regexp
 }
 
-var (
-	namer Namer = &DefaultNamer{}
-)
+var namer Namer = &DefaultNamer{}
 
 // NewNamespaceNamer returns a namespace-aware namer.
 func NewNamespaceNamer(shortNames bool) *NamespaceNamer {
